@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+    margin: auto;
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    padding: 16px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    text-align: center;
+}
+
+nav, article{
+    text-align: center;
+}
+
+img{
+    display: none;
+}
+
+.col-3{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+
+    .col-3{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    img{
+        display: block;
+        margin: auto;
+    }
+    h2{
+    display: none;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+
+    .col-3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    img{
+        display: block;
+        margin: auto;
+    }
+
+    h2{
+    display: none;
+    }
+
+}
